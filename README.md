@@ -1,2 +1,0 @@
-# amar-s-cuts
-barbershop
