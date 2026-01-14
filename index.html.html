@@ -1,0 +1,198 @@
+
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amar_s Cuts</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: #f7f7f7;
+            color: #333;
+        }
+        header {
+            background: #111;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+        }
+        header p {
+            margin-top: 10px;
+            font-size: 1.2em;
+            color: #ccc;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 900px;
+            margin: auto;
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .services, .prices {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+        .box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+        }
+        .contact {
+            text-align: center;
+        }
+        .contact a {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 30px;
+            background: #111;
+            color: white;
+            text-decoration: none;
+            border-radius: 30px;
+        }
+        footer {
+            background: #111;
+            color: #aaa;
+            text-align: center;
+            padding: 20px;
+            font-size: 0.9em;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Amar_s Cuts</h1>
+    
+</header>
+
+
+
+<section>
+    <h2>Leistungen</h2>
+    <div class="services">
+       
+        <div class="box">Herrenhaarschnitt</div>
+        <div class="box">Kinderhaarschnitt</div>
+        <div class="box">Styling & Beratung</div>
+       
+        
+    </div>
+</section>
+
+<section>
+    <h2>Preise</h2>
+    <div class="prices">
+        
+        <div class="box">Herren: ab 10 €</div>
+        <div class="box">Kinder: ab 10 €</div>
+		<div class="box">Styling: ab 5 € </div>
+       
+    </div>
+</section>
+
+
+
+<footer>
+    © 2025 Amar_s Cuts
+</footer>
+
+
+    
+
+<section>
+    <h2>Termin anfragen</h2>
+
+    <form onsubmit="sendWhatsApp(); return false;">
+        <input type="text" id="name" placeholder="Dein Name" required>
+        <input type="date" id="datum" required>
+        <input type="time" id="zeit" required>
+        <select id="leistung">
+            <option>Kinderhaarschnitt</option>
+            <option>Herrenhaarschnitt</option>
+            
+            <option>Styling</option>
+        </select>
+        <button type="submit">Termin per WhatsApp senden</button>
+    </form>
+</section>
+
+form {
+    max-width: 400px;
+    margin: auto;
+    display: grid;
+    gap: 15px;
+}
+input, select, button {
+    padding: 12px;
+    font-size: 1em;
+}
+button {
+    background: #25D366;
+    color: white;
+    border: none;
+    border-radius: 30px;
+}
+
+
+
+
+
+<script>
+function sendWhatsApp() {
+    const name = document.getElementById("name").value;
+    const datum = document.getElementById("datum").value;
+    const zeit = document.getElementById("zeit").value;
+    const leistung = document.getElementById("leistung").value;
+
+    const text =
+        `Hallo, ich möchte einen Termin buchen:%0A` +
+        `Name: ${name}%0A` +
+        `Datum: ${datum}%0A` +
+        `Uhrzeit: ${zeit}%0A` +
+        `Leistung: ${leistung}`;
+
+    window.open(`https://wa.me/436765651550?text=${text}`, "_blank");
+}
+</script
+
+<section class="cuts">
+    <h2>HAIRCUTS</h2>
+
+    <div class="cut-gallery">
+
+        <div class="cut-item">
+            <img src="C:\Users\amarh\OneDrive\Bilder\IMG_1244 2.jpeg" width="40%" >
+            <h3>MIDFADE</h3>
+        </div>
+		
+		<div class="cut-item">
+            <img src="C:\Users\amarh\Desktop\Amar_s Cuts\imagesburstfadejpg.jpeg" width="40%" >
+            <h3>BURSTFADE</h3>
+        </div>
+		
+		<div class="cut-item">
+            <img src="C:\Users\amarh\OneDrive\Bilder\IMG_1242 2.jpeg" width="40%" >
+            <h3>TAPERFADE</h3>
+        </div>
+		
+		
+    </div>
+</section>
+</body>
+</html>
+	
+
+
+
+
+
+
